@@ -1,6 +1,6 @@
 # .github/workflows/deploy.yml
 
-name: Deploy to Amazon ECR
+name: S3 Deploy to Amazon ECR
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./fask-s3-service
           push: true
           # Use the ECR repository name variable
           tags: |

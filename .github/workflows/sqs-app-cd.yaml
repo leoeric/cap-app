@@ -1,6 +1,6 @@
 # .github/workflows/deploy.yml
 
-name: Deploy to Amazon ECR
+name: SQS Deploy to Amazon ECR
 
 on:
   push:
