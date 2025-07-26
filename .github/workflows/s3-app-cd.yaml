@@ -30,7 +30,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: ./fask-s3-service/
+          context: ./flask-s3-service/
           push: true
           # Use the ECR repository name variable
           tags: |
